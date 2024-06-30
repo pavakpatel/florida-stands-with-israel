@@ -1,7 +1,7 @@
 :root {
   --orange: #e4922d;
-  --hover: #dfbf98;
   --green: #3e9f32;
+  --hover: #525252;
   --white: white;
   --black: black;
 }
@@ -31,10 +31,11 @@
   margin-right: 10px;
   font-family: Droid Sans, sans-serif;
   font-weight: 600;
+  transition: all .25s;
 }
 
 .button:hover {
-  background-color: var(--hover);
+  background-color: var(--green);
 }
 
 .div-block {
@@ -60,6 +61,11 @@
   font-family: Kanit, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  transition: all .3s;
+}
+
+.nav-link-2:hover {
+  background-color: #969696;
 }
 
 .nav-link-2.w--current {
@@ -68,6 +74,11 @@
 
 .nav-link-2.highlight {
   background-color: var(--orange);
+}
+
+.nav-link-2.highlight:hover {
+  background-color: var(--hover);
+  opacity: 1;
 }
 
 .heading-2 {
