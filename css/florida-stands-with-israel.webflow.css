@@ -1,0 +1,115 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.image {
+  opacity: 1;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  padding: 95px;
+  position: absolute;
+}
+
+.heading {
+  color: #3e9f32;
+  text-align: center;
+  font-family: Kanit, sans-serif;
+  font-size: 35px;
+}
+
+.button {
+  background-color: #e4922d;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Droid Sans, sans-serif;
+  font-weight: 600;
+}
+
+.div-block {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.nav-link {
+  display: none;
+}
+
+.navbar {
+  background-color: #3e9f32;
+}
+
+.nav-link-2 {
+  color: #fff;
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-link-2.w--current {
+  color: #fff;
+}
+
+.heading-2 {
+  font-family: Kanit, sans-serif;
+}
+
+.div-block-2 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-block-4 {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.image-2 {
+  opacity: .08;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.text-block {
+  font-family: Open Sans, sans-serif;
+}
+
+.div-block-5 {
+  max-width: 800px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rich-text-block {
+  font-family: Open Sans, sans-serif;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-span {
+  font-weight: 200;
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-5 {
+    max-width: 80%;
+  }
+
+  .icon {
+    color: #fff;
+  }
+}
+
+
