@@ -66,6 +66,10 @@
   color: #fff;
 }
 
+.nav-link-2.highlight {
+  background-color: var(--orange);
+}
+
 .heading-2 {
   font-family: Kanit, sans-serif;
 }
