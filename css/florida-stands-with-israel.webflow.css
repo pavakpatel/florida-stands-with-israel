@@ -301,6 +301,20 @@ a {
   padding: 0;
 }
 
+.image-4 {
+  width: 50px;
+}
+
+.image-5 {
+  border-radius: 15px;
+  width: 50px;
+  transition: all .25s;
+}
+
+.image-5:hover {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+}
+
 @media screen and (max-width: 991px) {
   .div-block-2 {
     width: 80%;
@@ -354,7 +368,7 @@ a {
 @media screen and (max-width: 479px) {
   .featured-image {
     z-index: 1;
-    height: 300px;
+    height: 250px;
     padding: 16px;
     position: relative;
   }
@@ -374,6 +388,15 @@ a {
 
   .main-header {
     height: auto;
+  }
+
+  .code-embed {
+    height: 100%;
+  }
+
+  .link-block {
+    width: 50px;
+    height: 50px;
   }
 
   .featured-image-copy {
