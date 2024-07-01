@@ -49,8 +49,8 @@ a {
 }
 
 .home-order-button-div {
-  grid-column-gap: 19px;
-  grid-row-gap: 19px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -267,13 +267,18 @@ a {
 
 .text-span {
   color: var(--orange);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .div-block-8 {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.text-span-copy {
+  color: var(--orange);
+  font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
