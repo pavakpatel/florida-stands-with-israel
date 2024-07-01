@@ -32,6 +32,7 @@ a {
   background-color: var(--orange);
   cursor: pointer;
   border-radius: 7px;
+  margin-top: 0;
   margin-left: 0;
   margin-right: 10px;
   font-family: Droid Sans, sans-serif;
@@ -41,6 +42,10 @@ a {
 
 .button:hover {
   background-color: var(--green);
+}
+
+.button.second {
+  margin-top: 30px;
 }
 
 .home-order-button-div {
@@ -114,6 +119,8 @@ a {
 
 .text-block {
   font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .tex-block-div {
@@ -249,6 +256,21 @@ a {
 }
 
 .counter-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-block-4 {
+  font-family: Open Sans, sans-serif;
+}
+
+.text-span {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.div-block-8 {
   justify-content: center;
   align-items: center;
   display: flex;
