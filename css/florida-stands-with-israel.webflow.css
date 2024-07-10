@@ -139,6 +139,10 @@ a {
   margin-right: auto;
 }
 
+.tex-block-div.minus {
+  margin-top: 0;
+}
+
 .rich-text-block {
   font-family: Open Sans, sans-serif;
 }
@@ -327,6 +331,20 @@ a {
   display: none;
   position: absolute;
   left: 236px;
+}
+
+.image-8 {
+  height: 50px;
+  margin-top: 3px;
+  position: static;
+  top: auto;
+  bottom: auto;
+  left: 7%;
+  right: auto;
+}
+
+.container {
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
