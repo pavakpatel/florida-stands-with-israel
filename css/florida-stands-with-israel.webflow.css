@@ -520,6 +520,11 @@ a {
   .download-tab {
     padding-bottom: 35px;
   }
+
+  .div-block-10, .div-block-10.no-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -545,6 +550,10 @@ a {
 
   .main-header {
     height: auto;
+  }
+
+  .footer-link {
+    font-size: 14px;
   }
 
   .download-tab {
@@ -579,6 +588,27 @@ a {
 
   .lwj-footer-social-icons, .social-share-wrap {
     padding-left: 0;
+  }
+
+  .div-block-9 {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+
+  .div-block-10 {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    flex-flow: column;
+  }
+
+  .div-block-10.no-bottom {
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+    flex-flow: column;
+  }
+
+  .text-block-5 {
+    width: 80%;
   }
 }
 
