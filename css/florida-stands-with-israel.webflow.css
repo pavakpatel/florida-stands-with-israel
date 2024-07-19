@@ -34,13 +34,12 @@ a {
 }
 
 .button {
-  outline-offset: 0px;
+  border: 3px solid var(--orange);
   color: var(--orange);
   text-transform: uppercase;
   cursor: pointer;
   background-color: #fff;
-  border-radius: 1px;
-  outline: 3px solid #e4922d;
+  border-radius: 5px;
   margin-top: 0;
   margin-left: 0;
   margin-right: 10px;
@@ -52,6 +51,7 @@ a {
 .button:hover {
   background-color: var(--orange);
   color: var(--white);
+  border-radius: 3px;
 }
 
 .button.second {
@@ -480,8 +480,37 @@ a {
 .image-9 {
   width: 50px;
   height: 50px;
-  position: absolute;
-  left: 279px;
+  margin-top: 4px;
+}
+
+.counterup-copy {
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 7px;
+  margin-bottom: 0;
+  padding: 5px;
+  font-family: Exo, sans-serif;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.counterup-copy.grey {
+  background-color: var(--grey);
+}
+
+.counter-remaining-copy {
+  background-color: var(--grey);
+  color: #fff;
+  border-radius: 7px;
+  margin-bottom: 0;
+  padding: 5px;
+  font-family: Exo, sans-serif;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.counter-remaining-copy.grey {
+  background-color: var(--grey);
 }
 
 @media screen and (max-width: 991px) {
@@ -503,6 +532,10 @@ a {
 
   .featured-image-copy {
     max-width: 100%;
+  }
+
+  .div-block-10, .div-block-10.no-bottom, .div-block-10.left {
+    width: 80%;
   }
 
   .image-9 {
@@ -546,9 +579,35 @@ a {
     padding-bottom: 35px;
   }
 
-  .div-block-10, .div-block-10.no-bottom {
+  .div-block-10 {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    flex-flow: column;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .div-block-10.no-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .div-block-10.left {
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 65px;
+  }
+
+  .text-block-5 {
+    width: auto;
+  }
+
+  .counterup-copy {
+    justify-content: center;
+    align-items: center;
+    width: 81.53px;
+    display: flex;
   }
 }
 
@@ -563,6 +622,10 @@ a {
   .main-heading {
     font-size: 29px;
     line-height: 34px;
+  }
+
+  .secondary-heading {
+    text-align: center;
   }
 
   .div-block-4 {
@@ -639,12 +702,27 @@ a {
   .div-block-10.left {
     justify-content: space-around;
     align-items: flex-start;
-    padding-left: 59px;
+    padding-left: 9px;
   }
 
   .text-block-5 {
     text-align: center;
     width: 80%;
+  }
+
+  .image-9 {
+    margin-top: 4px;
+  }
+
+  .counterup-copy {
+    justify-content: center;
+    align-items: center;
+    width: 81.53px;
+    display: flex;
+  }
+
+  .counter-remaining-copy {
+    width: 81.5313px;
   }
 }
 
