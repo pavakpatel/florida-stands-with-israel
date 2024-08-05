@@ -530,6 +530,21 @@ strong {
   display: none;
 }
 
+.text-span-2 {
+  font-weight: 700;
+}
+
+.flexpavak {
+  grid-column-gap: 13px;
+  grid-row-gap: 13px;
+  flex-flow: column;
+  display: flex;
+}
+
+.flexpavak.hide {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
