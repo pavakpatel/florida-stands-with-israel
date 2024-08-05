@@ -561,6 +561,10 @@ strong {
   display: none;
 }
 
+.youtube {
+  margin-top: 33px;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
@@ -865,5 +869,3 @@ strong {
     justify-self: center;
   }
 }
-
-
