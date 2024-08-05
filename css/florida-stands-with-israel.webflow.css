@@ -341,7 +341,7 @@ strong {
 }
 
 .image-5:hover {
-  box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 5px #0003;
 }
 
 .image-6 {
@@ -354,10 +354,7 @@ strong {
   height: 50px;
   margin-top: 3px;
   position: static;
-  top: auto;
-  bottom: auto;
-  left: 7%;
-  right: auto;
+  inset: auto auto auto 7%;
 }
 
 .container {
@@ -639,6 +636,10 @@ strong {
 
   .download-tab {
     padding-bottom: 35px;
+  }
+
+  .social-media-icon-footer-2 {
+    margin-left: 0;
   }
 
   .div-block-9 {
