@@ -566,6 +566,11 @@ strong {
   margin-top: 0;
 }
 
+.image-11 {
+  width: 22px;
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
@@ -810,6 +815,10 @@ strong {
     padding-left: 0;
   }
 
+  .social-media-icon-footer-2 {
+    margin-right: 0;
+  }
+
   .div-block-9 {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
@@ -862,6 +871,10 @@ strong {
   .text-block-6 {
     top: 34%;
     right: 27%;
+  }
+
+  .image-11 {
+    width: 21px;
   }
 }
 
