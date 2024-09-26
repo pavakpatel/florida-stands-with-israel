@@ -553,7 +553,7 @@ strong {
 
 .div-block-12 {
   margin-top: 29px;
-  display: flex;
+  display: none;
 }
 
 .text-block-6 {
@@ -589,11 +589,11 @@ strong {
 }
 
 .code-embed-2 {
+  margin-bottom: 0;
   overflow: hidden;
 }
 
 .div-block-14 {
-  margin-bottom: -95px;
   overflow: hidden;
 }
 
