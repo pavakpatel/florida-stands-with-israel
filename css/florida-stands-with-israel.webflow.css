@@ -623,6 +623,33 @@ strong {
   height: 60px;
 }
 
+.intro-popup {
+  z-index: 99;
+  background-color: #fff;
+  border: 1px solid #c3bdbd;
+  border-radius: 23px;
+  justify-content: center;
+  align-items: center;
+  width: 633px;
+  height: 633px;
+  margin: auto;
+  padding: 12px;
+  display: flex;
+  position: fixed;
+  inset: 0%;
+}
+
+.close-button {
+  width: 50px;
+  position: absolute;
+  inset: 0% 0% auto auto;
+}
+
+.code-embed-3 {
+  width: 100%;
+  height: 80%;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
