@@ -639,10 +639,6 @@ strong {
   inset: 0%;
 }
 
-.intro-popup.hide {
-  display: none;
-}
-
 .close-button {
   width: 50px;
   position: absolute;
