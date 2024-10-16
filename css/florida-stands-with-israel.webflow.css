@@ -174,13 +174,17 @@ strong {
 }
 
 .text-block {
-  text-align: center;
+  text-align: left;
   margin-top: 17px;
   margin-bottom: 17px;
   font-family: Open Sans, sans-serif;
   font-size: 18px;
   line-height: 24px;
   list-style-type: square;
+}
+
+.text-block.center {
+  text-align: center;
 }
 
 .tex-block-div {
