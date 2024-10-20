@@ -623,8 +623,9 @@ strong {
 }
 
 .div-block-10-copy {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 17px;
+  grid-row-gap: 17px;
+  flex-flow: column;
   justify-content: space-around;
   align-items: center;
   width: 100%;
