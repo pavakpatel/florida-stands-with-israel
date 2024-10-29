@@ -1073,6 +1073,8 @@ strong {
     grid-column-gap: 19px;
     grid-row-gap: 19px;
     flex-flow: column;
+    width: 90%;
+    padding: 15px 0 28px;
   }
 
   .div-block-10-copy.no-bottom {
