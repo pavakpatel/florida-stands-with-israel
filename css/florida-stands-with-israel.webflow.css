@@ -101,6 +101,8 @@ strong {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
 }
 
@@ -135,10 +137,6 @@ strong {
 .nav-link-2.highlight:hover {
   background-color: var(--hover);
   opacity: 1;
-}
-
-.nav-link-2.highlight.hide {
-  display: none;
 }
 
 .secondary-heading {
@@ -633,7 +631,7 @@ strong {
   width: 100%;
   max-width: 800px;
   padding: 0;
-  display: flex;
+  display: none;
 }
 
 .div-block-10-copy.no-bottom {
@@ -708,6 +706,14 @@ strong {
 
 .main-copy {
   font-weight: 700;
+}
+
+.div-block-16 {
+  min-height: 500px;
+}
+
+.code-embed-4 {
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
