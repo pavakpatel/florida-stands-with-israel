@@ -36,7 +36,6 @@ strong {
 .featured-image {
   aspect-ratio: 2.39;
   opacity: 1;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   perspective: 1083px;
   object-fit: contain;
@@ -64,7 +63,9 @@ strong {
   margin-top: 0;
   margin-left: 0;
   margin-right: 10px;
+  padding: 15px 20px;
   font-family: Droid Sans, sans-serif;
+  font-size: 18px;
   font-weight: 600;
   transition: all .25s;
 }
@@ -363,7 +364,6 @@ strong {
 .featured-image-copy {
   aspect-ratio: 2.39;
   opacity: 1;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   perspective: 1083px;
   object-fit: contain;
@@ -716,6 +716,58 @@ strong {
   height: 100%;
 }
 
+.rich-text-block-2 {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.paragraph-2 {
+  margin-top: 50px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.button-copy {
+  border: 3px solid var(--orange);
+  color: var(--orange);
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px 10px 20px 0;
+  padding: 15px 20px;
+  font-family: Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .25s;
+}
+
+.button-copy:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.button-copy.second {
+  margin-top: 30px;
+}
+
+.button-copy.green {
+  border-color: var(--green);
+  color: var(--green);
+  margin-right: 0;
+}
+
+.button-copy.green:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.button-copy.green.hide {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
@@ -810,6 +862,10 @@ strong {
 
   .div-block-10-copy.no-bottom, .div-block-10-copy.left {
     width: 80%;
+  }
+
+  .button-copy {
+    text-align: center;
   }
 }
 
