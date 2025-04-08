@@ -29,8 +29,8 @@ a {
 }
 
 strong {
-  color: var(--orange);
-  font-weight: 700;
+  color: #868686;
+  font-weight: 800;
 }
 
 .featured-image {
@@ -56,13 +56,14 @@ strong {
 .button {
   border: 3px solid var(--orange);
   color: var(--orange);
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
   background-color: #fff;
   border-radius: 5px;
   margin-top: 0;
   margin-left: 0;
-  margin-right: 10px;
+  margin-right: 0;
   padding: 15px 20px;
   font-family: Droid Sans, sans-serif;
   font-size: 18px;
@@ -103,7 +104,7 @@ strong {
   align-items: center;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   display: flex;
 }
 
@@ -586,6 +587,8 @@ strong {
   grid-column-gap: 13px;
   grid-row-gap: 13px;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -710,6 +713,7 @@ strong {
 
 .div-block-16 {
   min-height: 500px;
+  display: none;
 }
 
 .code-embed-4 {
@@ -768,6 +772,192 @@ strong {
   display: none;
 }
 
+.newsblock {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: column;
+  display: flex;
+}
+
+.news-image {
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+}
+
+.news-title {
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  display: flex;
+}
+
+.div-block-17 {
+  grid-column-gap: 19px;
+  grid-row-gap: 19px;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 9px;
+  font-family: Open Sans, sans-serif;
+  text-decoration: none;
+  display: flex;
+}
+
+.div-block-17:hover {
+  background-color: #f0f0f0;
+}
+
+.news-desc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.news-date {
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  display: flex;
+}
+
+.bold-text-main {
+  color: var(--orange);
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.spacer {
+  height: 30px;
+}
+
+.rich-text-block-3 {
+  font-family: Open Sans, sans-serif;
+}
+
+.div-block-18 {
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.text-block-copy {
+  text-align: left;
+  width: 400px;
+  margin: 17px auto;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type: square;
+}
+
+.text-block-copy.center {
+  text-align: center;
+}
+
+.main-text {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bold--tex {
+  color: #838383;
+  margin-bottom: 8px;
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.rich-text-block-4 {
+  color: #838383;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+}
+
+.list-item {
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.image-12 {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.image-13 {
+  width: 100%;
+  display: block;
+}
+
+.div-block-19 {
+  width: 352px;
+}
+
+.text-block-7 {
+  font-family: Open Sans, sans-serif;
+}
+
+.button-copy-copy {
+  color: #243362;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px solid #243362;
+  border-radius: 5px;
+  margin: 20px 10px 20px 0;
+  padding: 15px 20px;
+  font-family: Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .25s;
+}
+
+.button-copy-copy:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.button-copy-copy.second {
+  margin-top: 30px;
+}
+
+.button-copy-copy.green {
+  border-color: var(--green);
+  color: var(--green);
+  margin-right: 0;
+}
+
+.button-copy-copy.green:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.button-copy-copy.green.hide {
+  display: none;
+}
+
+.divider {
+  background-color: #c9c9c9;
+  height: 3px;
+}
+
+.div-block-20 {
+  grid-column-gap: 19px;
+  grid-row-gap: 19px;
+  flex-flow: column;
+  width: 250px;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   strong {
     color: var(--orange);
@@ -775,6 +965,10 @@ strong {
 
   .button {
     text-align: center;
+  }
+
+  .nav-link-2.hide {
+    display: block;
   }
 
   .div-block-2 {
@@ -865,6 +1059,14 @@ strong {
   }
 
   .button-copy {
+    text-align: center;
+  }
+
+  .text-block-copy {
+    margin-top: 49px;
+  }
+
+  .button-copy-copy {
     text-align: center;
   }
 }
@@ -1152,6 +1354,10 @@ strong {
 
   .secondary-heading-copy {
     text-align: center;
+  }
+
+  .text-block-copy {
+    font-size: 14px;
   }
 }
 
