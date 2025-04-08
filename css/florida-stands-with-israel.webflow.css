@@ -792,7 +792,7 @@ strong {
   display: flex;
 }
 
-.div-block-17 {
+.content-tab {
   grid-column-gap: 19px;
   grid-row-gap: 19px;
   border-radius: 8px;
@@ -804,8 +804,12 @@ strong {
   display: flex;
 }
 
-.div-block-17:hover {
+.content-tab:hover {
   background-color: #f0f0f0;
+}
+
+.content-tab.hide {
+  display: none;
 }
 
 .news-desc {
