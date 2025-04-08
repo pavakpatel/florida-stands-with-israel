@@ -971,6 +971,10 @@ strong {
     display: block;
   }
 
+  .nav-link-2.hide.mobile-hide {
+    display: none;
+  }
+
   .div-block-2 {
     width: 80%;
   }
