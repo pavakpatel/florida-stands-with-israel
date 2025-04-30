@@ -654,12 +654,13 @@ strong {
   justify-content: center;
   align-items: center;
   width: 633px;
-  height: 633px;
+  height: 500px;
   margin: auto;
   padding: 12px;
   display: flex;
   position: fixed;
   inset: 0%;
+  overflow: auto;
 }
 
 .intro-popup.hide {
@@ -675,6 +676,7 @@ strong {
 .code-embed-3 {
   width: 100%;
   height: 80%;
+  overflow: scroll;
 }
 
 .hide {
