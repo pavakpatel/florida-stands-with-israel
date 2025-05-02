@@ -141,6 +141,15 @@ strong {
   opacity: 1;
 }
 
+.nav-link-2.translate {
+  color: #fff;
+  font-weight: 300;
+}
+
+.nav-link-2.translate.hide {
+  display: block;
+}
+
 .secondary-heading {
   margin-bottom: 29px;
   font-family: Kanit, sans-serif;
@@ -993,7 +1002,7 @@ strong {
     display: block;
   }
 
-  .nav-link-2.hide.mobile-hide {
+  .nav-link-2.hide.mobile-hide, .nav-link-2.translate.hide {
     display: none;
   }
 
@@ -1094,6 +1103,15 @@ strong {
 
   .button-copy-copy {
     text-align: center;
+  }
+
+  .link-2 {
+    color: var(--orange);
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    inset: 67% 0% auto;
   }
 }
 
