@@ -219,7 +219,7 @@ strong {
 .main-header {
   border-bottom: 4px solid var(--orange);
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   position: relative;
 }
@@ -282,8 +282,7 @@ strong {
   display: flex;
 }
 
-.bold-text,
-.bold-text-2 {
+.bold-text, .bold-text-2 {
   color: var(--green);
 }
 
@@ -465,8 +464,7 @@ strong {
   color: var(--orange);
 }
 
-.social-share.white.hide,
-.social-share.hide {
+.social-share.white.hide, .social-share.hide {
   display: none;
 }
 
@@ -505,9 +503,7 @@ strong {
 }
 
 .div-block-10.left {
-  height: auto;
-  min-height: 60px;
-  padding: 20px 0;
+  height: 60px;
 }
 
 .counter-remaining {
@@ -618,8 +614,7 @@ strong {
   margin-right: 5px;
 }
 
-.event_tracking_image,
-.formfooter-f6-branding21 {
+.event_tracking_image, .formfooter-f6-branding21 {
   display: none;
 }
 
@@ -881,8 +876,7 @@ strong {
 }
 
 .main-text {
-  width: 90%;
-  max-width: 800px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1008,8 +1002,7 @@ strong {
     display: block;
   }
 
-  .nav-link-2.hide.mobile-hide,
-  .nav-link-2.translate.hide {
+  .nav-link-2.hide.mobile-hide, .nav-link-2.translate.hide {
     display: none;
   }
 
@@ -1038,9 +1031,7 @@ strong {
     max-width: 100%;
   }
 
-  .div-block-10,
-  .div-block-10.no-bottom,
-  .div-block-10.left {
+  .div-block-10, .div-block-10.no-bottom, .div-block-10.left {
     width: 80%;
   }
 
@@ -1098,8 +1089,7 @@ strong {
     width: 80%;
   }
 
-  .div-block-10-copy.no-bottom,
-  .div-block-10-copy.left {
+  .div-block-10-copy.no-bottom, .div-block-10-copy.left {
     width: 80%;
   }
 
@@ -1137,7 +1127,7 @@ strong {
   }
 
   .main-header {
-    height: 300px;
+    height: 350px;
   }
 
   .footer-section {
@@ -1185,9 +1175,9 @@ strong {
 
   .div-block-10.left {
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
-    padding-left: 20px;
+    padding-left: 65px;
   }
 
   .text-block-5 {
@@ -1320,8 +1310,7 @@ strong {
     max-width: none;
   }
 
-  .lwj-footer-social-icons,
-  .social-share-wrap {
+  .lwj-footer-social-icons, .social-share-wrap {
     padding-left: 0;
   }
 
@@ -1427,281 +1416,3 @@ strong {
 }
 
 
-
-/* Redirect Popup Styles */
-.redirect-popup {
-  display: none;
-  position: fixed;
-  z-index: 2000;
-  /* High z-index to sit on top of everything */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black w/ opacity */
-  justify-content: center;
-  align-items: center;
-}
-
-.redirect-popup-content {
-  background-color: #fefefe;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 12px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.redirect-popup-close {
-  color: #aaa;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.redirect-popup-close:hover,
-.redirect-popup-close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.redirect-popup-text {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #333;
-}
-
-.redirect-popup-btn {
-  margin-top: 10px;
-  align-self: center;
-}
-
-/* Purchase Options Tabs */
-.purchase-options-container {
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  color: #333;
-  margin-top: 20px;
-}
-
-.purchase-tabs {
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 20px;
-}
-
-.purchase-tab {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 20px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #888;
-  transition: 0.3s;
-  border-bottom: 4px solid transparent;
-  width: 50%;
-}
-
-.purchase-tab:hover {
-  color: #555;
-  background-color: #f4f4f4;
-}
-
-.purchase-tab.active {
-  color: #3e9f32;
-  /* Using brand green */
-  border-bottom: 4px solid #3e9f32;
-  background-color: white;
-}
-
-.purchase-content {
-  display: none;
-  animation: fadeEffect 0.5s;
-  text-align: left;
-}
-
-.purchase-content.active {
-  display: block;
-}
-
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.purchase-step {
-  margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.purchase-note {
-  background-color: #f9f9f9;
-  border-left: 5px solid #e4922d;
-  /* Brand orange */
-  padding: 15px;
-  margin: 20px 0;
-  font-size: 15px;
-}
-
-.purchase-title {
-  font-weight: 700;
-  margin-bottom: 5px;
-  display: inline-block;
-  font-size: 18px;
-  color: #3e9f32;
-  margin-right: 5px;
-}
-
-.quickest-badge {
-  background-color: #e4922d;
-  color: white;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-left: 8px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-/* Goal Progress Tracker */
-.goal-tracker-container {
-  width: 90%;
-  max-width: 800px;
-  margin: 30px auto;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-}
-
-.goal-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #3e9f32;
-  margin-bottom: 10px;
-  font-family: 'Kanit', sans-serif;
-}
-
-/* Mobile Break */
-.mobile-break {
-  display: none;
-}
-
-@media screen and (max-width: 991px) {
-  .mobile-break {
-    display: block;
-  }
-}
-
-.progress-bar-bg {
-  background-color: #e0e0e0;
-  border-radius: 25px;
-  height: 30px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.progress-bar-fill {
-  background-color: #e4922d;
-  /* Brand Orange */
-  height: 100%;
-  width: 0%;
-  /* Initial width, JS will animate */
-  border-radius: 25px 0 0 25px;
-  transition: width 1.5s ease-in-out;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.progress-text {
-  color: #333;
-  font-weight: bold;
-  font-size: 14px;
-  white-space: nowrap;
-  position: relative;
-  z-index: 2;
-}
-
-.goal-stats {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-  font-size: 14px;
-  color: #555;
-}
-
-.goal-subtext {
-  margin-top: 10px;
-  font-size: small;
-  color: #777;
-  font-style: italic;
-  /* font-family: 'Lato', sans-serif; removed */
-}
-
-@media screen and (max-width: 479px) {
-  .goal-tracker-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    /* Ensure full width usage */
-  }
-
-  .goal-title {
-    margin-bottom: 5px;
-    line-height: 1.3;
-  }
-
-  .goal-subtext {
-    margin-top: 5px;
-  }
-
-  /* Reducing margins on the parent container if needed */
-  .div-block-10.left {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .purchase-tab {
-    font-size: 14px;
-    /* Smaller text on mobile */
-    padding: 10px 5px;
-    /* Adjust padding */
-  }
-
-  /* Ensure badge stays on one line */
-  .quickest-badge {
-    white-space: nowrap;
-    display: inline-block;
-    /* Helps with layout */
-  }
-}
