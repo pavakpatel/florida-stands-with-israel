@@ -76,7 +76,7 @@
           <span class="progress-text" id="plate-progress-text">0 / 3,500</span>
         </div>
         <div class="goal-stats">
-          <span>As of April 1, 2026: <strong id="current-count">768</strong></span>
+          <span id="as-of-text">As of April 1, 2026: <strong id="current-count">768</strong></span>
           <span>Goal: <strong>3,500</strong></span>
         </div>
         <div class="goal-subtext">Over 3,500 registered license plates need to be on the road by October 31, 2026 to avoid discontinuation of the plate.</div>
@@ -249,14 +249,21 @@
 
     // Redirect Popup Logic
     document.addEventListener('DOMContentLoaded', function() {
-      // Goal Tracker Animation
-      var currentCount = 733; // Update this manually
+      // =============================================
+      // UPDATE THESE TWO VALUES WHEN THE COUNT CHANGES
+      // (This is the ONLY place you need to edit)
+      var currentCount = 768;
+      var asOfDate = "April 1, 2026";
+      // =============================================
+
       var goalCount = 3500;
       var percentage = (currentCount / goalCount) * 100;
       if (percentage > 100) percentage = 100;
 
       var fillBar = document.getElementById("plate-progress-fill");
       var textBar = document.getElementById("plate-progress-text");
+      var asOfText = document.getElementById("as-of-text");
+      var countEl = document.getElementById("current-count");
 
       if(fillBar && textBar) {
           // Delay slightly to allow transition to be visible on load
@@ -264,6 +271,10 @@
               fillBar.style.width = percentage + "%";
           }, 500);
           textBar.innerText = currentCount.toLocaleString() + " / " + goalCount.toLocaleString();
+      }
+      if(asOfText && countEl) {
+          countEl.innerText = currentCount.toLocaleString();
+          asOfText.innerHTML = "As of " + asOfDate + ": <strong id='current-count'>" + currentCount.toLocaleString() + "</strong>";
       }
 
       var modal = document.getElementById("redirect-popup");
